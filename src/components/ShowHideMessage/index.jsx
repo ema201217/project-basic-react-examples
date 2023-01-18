@@ -1,5 +1,6 @@
 import { Button, Col, Container, Row, Toast } from "react-bootstrap";
 import { useShow } from "../../hook/useShow";
+import './styles.css'
 
 export const ShowHideMessage = () => {
   const { show, handleShowMessage } = useShow(false);
@@ -23,7 +24,7 @@ export const ShowHideMessage = () => {
                 alt=""
               />
               <strong className="me-auto">ReactJS</strong>
-              <small>11 mins ago</small>
+              <small className='small'>11 mins ago</small>
             </Toast.Header>
             <Toast.Body>Primer Clase!!</Toast.Body>
           </Toast>
