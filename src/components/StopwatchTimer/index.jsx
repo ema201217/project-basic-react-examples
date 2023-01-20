@@ -20,6 +20,9 @@ export const StopwatchTimer = () => {
   const [intervalState, setIntervalState] = useState(null);
 
   const handleStart = () => {
+    if(intervalState){
+      handleStop()
+    }
 
       const interval = setInterval(
         () => {
@@ -58,6 +61,7 @@ export const StopwatchTimer = () => {
     setVelocity(vel);
     setVelocityName(velText);
   };
+  
   return (
     <Container>
       <Row className="mt-5">
