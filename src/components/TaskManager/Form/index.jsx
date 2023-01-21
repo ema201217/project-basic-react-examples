@@ -25,6 +25,7 @@ export const FormTask = ({ onChange, inputsValues, onSubmit, refForm }) => {
         />
       </Form.Group>
 
+      
         <Form.Label>Descripción</Form.Label>
         <Form.Control
           type="text"
@@ -34,6 +35,8 @@ export const FormTask = ({ onChange, inputsValues, onSubmit, refForm }) => {
           onChange={onChange}
           name="description"
         />
+      
+
       <Button variant="success" type="submit" className="mx-2">
         Agregar
       </Button>
